@@ -3,9 +3,6 @@ import {View,Text,Image,StyleSheet,StatusBar} from 'react-native';
 import Pie from 'react-native-pie';
 
 function FuncApi (){
-
-	const [county, setCount]= useState(1);
-
 	const [port, setPortfolio]= useState({
 
 	fmcaTopAssets: [1],
@@ -14,8 +11,8 @@ function FuncApi (){
 })
 
 
-	const testapi = async () => {   
-			const usertest = await axios.get ("https://ec3ll8cxti.execute-api.ap-southeast-2.amazonaws.com/prod/portfolios/investment-fund?portfolio=290002"); 
+const testapi = async () => {   
+	const usertest = await axios.get ("https://sn9jp0i0kb.execute-api.ap-southeast-2.amazonaws.com/dev/investments/1210/investmentholdings"); 
 			setPortfolio(usertest.data);
 			}
 
