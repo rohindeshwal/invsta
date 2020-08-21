@@ -1,15 +1,12 @@
 import React, {useState,useEffect} from 'react';
 import {View,Text,Image,StyleSheet,StatusBar} from 'react-native';
 import Doughnut from 'react-native-pie';
+import {LineChart} from 'react-native-chart-kit';
+import {axios} from 'axios';
 
-// function FuncApi (){
-// 	const [port, setPortfolio]= useState({
-
-// 	fmcaTopAssets: [1],
-// 	quarterlyPdf : [0],
-// 	portfolios: [0],
-// })
- 
+// const FuncApi = () => {
+// 	const [name, setName]= useState({})
+// 	const [fees, setFees]= useState({})
 
 // const testapi = async () => {   
 // 	const usertest = await axios.get ("https://sn9jp0i0kb.execute-api.ap-southeast-2.amazonaws.com/dev/investments/1210/investmentholdings"); 
@@ -24,46 +21,21 @@ import Doughnut from 'react-native-pie';
 export default function Chart_header(){
 	return(
 		<>
-			<Doughnut
-				radius={100}
-				innerRadius={50}  
-				sections={[
-				{
-						percentage: 30,
-						color: '#abff87',
-				},
-				{
-						percentage: 25,
-						color: '#707070',
-				},
-				{
-						percentage: 10,
-						color: '#dc67ec',
-				},
-				{
-						percentage: 35,
-						color: '#69b8ff',
-				},
-				]}
-				strokeCap={'butt'}
+			<LineChart
+				data={{
+				labels: ["January", "February", "March", "April", "May", "June"],
+				datasets: [
+					{
+					data: [20,30,42,64,78,21],
+					backgroundColor:[ "#e26a00",]
+					}
+				]
+				}}
+				width={320} // from react-native
+				height={220}
 			/>
-			
-	{/* <Text 
-			style={{
-					fontSize:15,
-					fontWeight:'600',
-					marginTop:20,
-					marginBottom:20}}>
-			Australasian Equity Fund
-	</Text> */}
-	
-		</>
+
+</>
     )
 }
 
-
-/* <View style={styles.base}>
-            <Text style={{fontSize:30}}>{port.fmcaTopAssets[0].AsAtDate}</Text>
-            <Text style={{fontSize:30}}>{port.quarterlyPdf[0].portfolio}</Text> 
-            <Text style={{fontSize:25}}>{port.portfolios[0].Name}</Text>
-        </View> */
