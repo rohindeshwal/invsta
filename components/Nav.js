@@ -39,8 +39,8 @@ const FirstRoute = () => (
       </View>
       <View style={styles.basic}>
         <Text style={{fontSize:15}}>Company Name:</Text>
-                            {/* <Text style={styles.textStyle}>$19,339,741.46</Text> */}
-                        </View>
+        {/* <Text style={styles.textStyle}>$19,339,741.46</Text> */}
+      </View>
 
                         
   </>
