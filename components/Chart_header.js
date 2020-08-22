@@ -5,7 +5,7 @@ import {LineChart} from 'react-native-chart-kit';
 import {axios} from 'axios'
 
 
-export default function Chart_header(){
+function Chart_header(){
    
     const [withdrawl, setWithdrawl]= useState({
 		fmcaTopAssets:[0],
@@ -60,7 +60,6 @@ export default function Chart_header(){
             <Text style={styles.textStyle}>$19,339,741.46</Text>
       </View>
 
-   
 			<LineChart
 				data={{
 				labels: ["January", "February", "March", "April", "May", "June"],
@@ -135,7 +134,7 @@ export default function Chart_header(){
     )
 }
 
-
+export default Chart_header;
 const styles=StyleSheet.create({
    basic:{
       flexDirection:'row',
