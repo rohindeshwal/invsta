@@ -39,7 +39,7 @@ export default class Header extends React.Component{
                             <Chart_header />
 
                         </View>
-                        <View style={styles.basic}>
+                        {/* <View style={styles.basic}>
                             <Text style={{fontSize:15}}>Contribution</Text>
                             <Text style={styles.textStyle}>$19,339,741.46</Text>
                         </View>
@@ -66,7 +66,7 @@ export default class Header extends React.Component{
                         <View style={styles.basic}>
                             <Text style={{fontSize:15}}>Value</Text>
                             <Text style={styles.textStyle}>$19,339,741.46</Text>
-                        </View>
+                        </View> */}
                     </View>
                 </View>
                
