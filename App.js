@@ -4,6 +4,7 @@ import Header from './components/Header';
 import Profile from './components/Profile';
 import Nav from './components/Nav'
 import First from './components/First'
+import High from './components/High';
 
 export default class App extends React.Component{
   render(){
@@ -12,6 +13,7 @@ export default class App extends React.Component{
         <Header />
         {/* <Profile /> */}
         {/* <First /> */}
+        {/* <High /> */}
       </View>
     )
   }

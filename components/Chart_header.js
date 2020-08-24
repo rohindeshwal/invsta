@@ -20,7 +20,6 @@ function Chart_header(){
       }, []);
 
 
-
 	return(
 		<>
       {/* <Text style={{fontSize:30}}>{county}</Text>

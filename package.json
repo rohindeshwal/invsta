@@ -10,6 +10,7 @@
     "lint": "eslint ."
   },
   "dependencies": {
+    "@highcharts/highcharts-react-native": "^3.1.2",
     "@react-native-community/art": "^1.2.0",
     "@react-native-community/masked-view": "^0.1.10",
     "@react-navigation/bottom-tabs": "^5.8.0",
@@ -32,6 +33,7 @@
     "react-native-screens": "^2.10.1",
     "react-native-svg": "^12.1.0",
     "react-native-tab-view": "^2.15.1",
+    "react-native-webview": "^10.7.0",
     "react-navigation": "^4.4.0",
     "yarn": "^1.22.4"
   },
