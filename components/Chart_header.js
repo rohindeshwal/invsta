@@ -10,7 +10,7 @@ import {LineChart} from 'react-native-chart-kit';
 function Chart_header(){
    
     const [withdrawl, setWithdrawl]= useState({
-		fmcaTopAssets:[0],
+		// fmcaTopAssets:[0],
 	  });
 
     const testapi = async () => {   
@@ -70,31 +70,31 @@ function Chart_header(){
 			<View style={styles.basic}>
             <Text style={{fontSize:15}}>Contribution</Text>
             <Text style={styles.textStyle}>{withdrawl.distMethod}</Text>
-      </View>
-      <View style={styles.basic}>
-            <Text style={{fontSize:15}}>Reinvested Distins</Text>
-            <Text style={styles.textStyle}>$0.0</Text>
-      </View>
-      <View style={styles.basic}>
-            <Text style={{fontSize:15}}>Distins</Text>
-            <Text style={styles.textStyle}>-$0.0</Text>
-      </View>
-      <View style={styles.basic}>
-            <Text style={{fontSize:15}}>Withdrawls</Text>
-            <Text style={styles.textStyle}>-$0.00</Text>
-      </View>
-      <View style={styles.basic}>
-            <Text style={{fontSize:15}}>Tax/Paid</Text>
-            <Text style={styles.textStyle}>-$0.0</Text>
-      </View>
-      <View style={styles.basic}>
-            <Text style={{fontSize:15}}>Gain/Losses</Text>
-            <Text style={styles.textStyle}>$0.0</Text>
-      </View>
-      <View style={styles.basic}>
-            <Text style={{fontSize:15}}>Value</Text>
-            <Text style={styles.textStyle}>$19,339,741.46</Text>
-      </View>
+			</View>
+			<View style={styles.basic}>
+					<Text style={{fontSize:15}}>Reinvested Distins</Text>
+					<Text style={styles.textStyle}>$0.0</Text>
+			</View>
+			<View style={styles.basic}>
+					<Text style={{fontSize:15}}>Distins</Text>
+					<Text style={styles.textStyle}>-$0.0</Text>
+			</View>
+			<View style={styles.basic}>
+					<Text style={{fontSize:15}}>Withdrawls</Text>
+					<Text style={styles.textStyle}>-$0.00</Text>
+			</View>
+			<View style={styles.basic}>
+					<Text style={{fontSize:15}}>Tax/Paid</Text>
+					<Text style={styles.textStyle}>-$0.0</Text>
+			</View>
+			<View style={styles.basic}>
+					<Text style={{fontSize:15}}>Gain/Losses</Text>
+					<Text style={styles.textStyle}>$0.0</Text>
+			</View>
+			<View style={styles.basic}>
+					<Text style={{fontSize:15}}>Value</Text>
+					<Text style={styles.textStyle}>$19,339,741.46</Text>
+			</View>
 
 
 			{/* <Doughnut
